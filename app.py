@@ -92,14 +92,17 @@ with st.sidebar:
 
     # Achievements
     with st.expander("ACHIEVEMENTS"):
-        st.write("GlobalFoundries Appreciation Award 2023")
-        st.write("GlobalFoundries Appreciation Award 2022")
-        st.write("GlobalFoundries Spotlight Award 2023")
-        st.write("GlobalFoundries Spotlight Award 2022")
+        st.write("TOP 1 Percent GLOBAL #164 out of 36,544 Quantitative Traders.")
+        st.write("TOP 3 Percent NTU #15 out of 501 Quantitative Traders for 2023 NTU WorldQuant Alphaton")
+        st.write("WorldQuant Gold Medal 2023")
         st.write("2nd Place Hackathon 2020+1 University College London Code Club")
         st.write("Top 15 out of 655 teams in Shopee Ultimate Case Competition 2021")
         st.write("First runner-up in NUS Public Art Competition")
         st.write("Finisher at Osim Sundown 21KM 2023 & SCSM 21KM 2022")
+        st.write("GlobalFoundries Appreciation Award 2023")
+        st.write("GlobalFoundries Appreciation Award 2022")
+        st.write("GlobalFoundries Spotlight Award 2023")
+        st.write("GlobalFoundries Spotlight Award 2022")
 # Sidebar Section
 # with st.sidebar:
 #     if st.button('LINKEDIN'):
