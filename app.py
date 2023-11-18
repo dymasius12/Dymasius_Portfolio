@@ -77,6 +77,11 @@ with st.sidebar:
 
 with st.sidebar:
 
+    with st.expander("IMPORTANT LINKS & RESUME"):
+        st.markdown("[RESUME](https://drive.google.com/file/d/1nCbXB3dLw640BtPMPpmYMHavERgWmggY/view?usp=sharing)")
+        st.markdown("[LINKEDIN](https://linkedin.com/in/dymasius/)")
+        st.markdown("[GITHUB](https://github.com/dymasius12/)")
+
     # Languages & Skills
     with st.expander("LANGUAGES"):
         st.write("Indonesian Language (Native)")
@@ -96,9 +101,9 @@ with st.sidebar:
         st.write("First runner-up in NUS Public Art Competition")
         st.write("Finisher at Osim Sundown 21KM 2023 & SCSM 21KM 2022")
 # Sidebar Section
-with st.sidebar:
-    if st.button('LINKEDIN'):
-        webbrowser.open("https://linkedin.com/in/dymasius/")
+# with st.sidebar:
+#     if st.button('LINKEDIN'):
+#         webbrowser.open("https://linkedin.com/in/dymasius/")
 
 ###########END OF SIDEBAR
 
