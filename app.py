@@ -102,6 +102,69 @@ with st.sidebar:
 
 ###########END OF SIDEBAR
 
+##########PROJECT EXPERIENCE
+# Project details displayed in main area based on selection
+st.header("📁 PROJECT EXPERIENCE")
+# Store the initial value of widgets in session state
+if "visibility" not in st.session_state:
+    st.session_state.visibility = "hidden"
+    st.session_state.disabled = False
+#Dropdown for selecting a project
+
+selected_project = st.selectbox(
+    "Select a Project",
+    ["Credit-Card-Fraud-Detection", "The Motley S.M.A.R.T", "News_API", "UCL-IHI-Hackathon2021"],
+    label_visibility=st.session_state.visibility,
+)
+
+if selected_project == "The Motley S.M.A.R.T":
+    with st.expander("The Motley S.M.A.R.T", expanded=True):
+        st.write("""
+        The Motley S.M.A.R.T is a desktop application that provides insights and visualization for stocks, 
+        specifically the S&P 500 companies. With an intuitive interface, users can either select a company 
+        from a dropdown list or input a stock code directly to view comprehensive stock details or visualize 
+        stock price trends.
+        """)
+        st.markdown("[GitHub Page](https://github.com/dymasius12/TheMotleySMART)")
+        st.markdown("""
+        - **Company Selection**: Choose a company from the S&P 500 list via a dropdown.
+        - **Stock Dashboard**: Get a detailed dashboard view of the selected stock.
+        - **Stock Price vs. Time Graph**: Visualize the stock's closing prices over time.
+        """)
+
+elif selected_project == "News_API":
+    with st.expander("News_API", expanded=True):
+        st.write("""
+        News_API is a python script that tries to get the latest news.
+        """)
+        st.markdown("[GitHub Page](https://github.com/dymasius12/News_API)")
+        st.write("""
+        - This script allows you to fetch the latest news for a given stock company name using the NewsAPI.
+        """)
+
+elif selected_project == "UCL-IHI-Hackathon2021":
+    with st.expander("UCL-IHI-Hackathon2021", expanded=True):
+        st.write("""
+        The IHI Code Club Hackathon 2020+1 is a full-day collaborative hacking sprint to solve real-world 
+        issues in health data science. As a participant, you had the opportunity to learn from and collaborate 
+        with other participants from diverse backgrounds.
+        """)
+        st.markdown("[GitHub Page](https://github.com/dymasius12/UCL-IHI-Hackathon2021)")
+        st.write("""
+        - Task: Tackling a public health problem related to air quality and respiratory illness in the US.
+        """)
+
+elif selected_project == "Credit-Card-Fraud-Detection":
+    with st.expander("Credit-Card-Fraud-Detection", expanded=True):
+        st.write("""
+        It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase. This app is to help identify the fraudulent credit card transactions.
+        """)
+        st.markdown("[Web App](https://ntu-msft-mh6804.streamlit.app/)")
+        st.write("""
+        - Task: Tackling Credit Card Fraud Detection.
+        """)
+
+##########END OF PROJECT EXPERIENCE
 ########### Education Section
 
 ntu_image = "img/ntu.png"
@@ -221,70 +284,6 @@ st.markdown("""
 - Created self-updating visualizations in Power BI to analyze survey responses and identify key areas for improvement,
 resulting in a 15% increase in overall customer satisfaction scores.
 """)
-
-
-
-# Project details displayed in main area based on selection
-st.header("📁 PROJECT EXPERIENCE")
-# Store the initial value of widgets in session state
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "hidden"
-    st.session_state.disabled = False
-#Dropdown for selecting a project
-
-selected_project = st.selectbox(
-    "Select a Project",
-    ["Credit-Card-Fraud-Detection", "The Motley S.M.A.R.T", "News_API", "UCL-IHI-Hackathon2021"],
-    label_visibility=st.session_state.visibility,
-)
-
-if selected_project == "The Motley S.M.A.R.T":
-    with st.expander("The Motley S.M.A.R.T", expanded=True):
-        st.write("""
-        The Motley S.M.A.R.T is a desktop application that provides insights and visualization for stocks, 
-        specifically the S&P 500 companies. With an intuitive interface, users can either select a company 
-        from a dropdown list or input a stock code directly to view comprehensive stock details or visualize 
-        stock price trends.
-        """)
-        st.markdown("[GitHub Page](https://github.com/dymasius12/TheMotleySMART)")
-        st.markdown("""
-        - **Company Selection**: Choose a company from the S&P 500 list via a dropdown.
-        - **Stock Dashboard**: Get a detailed dashboard view of the selected stock.
-        - **Stock Price vs. Time Graph**: Visualize the stock's closing prices over time.
-        """)
-
-elif selected_project == "News_API":
-    with st.expander("News_API", expanded=True):
-        st.write("""
-        News_API is a python script that tries to get the latest news.
-        """)
-        st.markdown("[GitHub Page](https://github.com/dymasius12/News_API)")
-        st.write("""
-        - This script allows you to fetch the latest news for a given stock company name using the NewsAPI.
-        """)
-
-elif selected_project == "UCL-IHI-Hackathon2021":
-    with st.expander("UCL-IHI-Hackathon2021", expanded=True):
-        st.write("""
-        The IHI Code Club Hackathon 2020+1 is a full-day collaborative hacking sprint to solve real-world 
-        issues in health data science. As a participant, you had the opportunity to learn from and collaborate 
-        with other participants from diverse backgrounds.
-        """)
-        st.markdown("[GitHub Page](https://github.com/dymasius12/UCL-IHI-Hackathon2021)")
-        st.write("""
-        - Task: Tackling a public health problem related to air quality and respiratory illness in the US.
-        """)
-
-elif selected_project == "Credit-Card-Fraud-Detection":
-    with st.expander("Credit-Card-Fraud-Detection", expanded=True):
-        st.write("""
-        It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase. This app is to help identify the fraudulent credit card transactions.
-        """)
-        st.markdown("[Web App](https://ntu-msft-mh6804.streamlit.app/)")
-        st.write("""
-        - Task: Tackling Credit Card Fraud Detection.
-        """)
-
 
 
 # -----------------  contact  ----------------- #
