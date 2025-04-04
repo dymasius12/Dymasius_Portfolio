@@ -3,7 +3,7 @@ info = {
    "Name": "Dymasius",
    "Full_Name": "Dymasius Yusuf Sitepu",
    "Intro": "Passionate Engineer exploring AI For Good",
-   "About":"A motivated competitive engineer experienced in data analysis, automation, AI/ML, & web development. Proficient in Python, PHP, C, & Java. Passionate marathon runner & church pianist. Excels under pressure. High learning agility, good communication.",
+   "About":"A motivated competitive engineer experienced in data analysis, automation, AI/ML, & web development. Proficient in Python, PHP, C, & Java. Passionate marathon runner & church pianist. Excels under pressure. High learning agility, good communication. Resume: https://bit.ly/dymasius-resume2025",
    #"Tableau":"",
    #"Medium":"",
    "City":"Singapore",
